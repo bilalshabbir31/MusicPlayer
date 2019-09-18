@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secondactivity">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/songicon"
+        android:src="@drawable/allsongsicon"/>
+    <Button
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:text="All songs"
+        android:textAlignment="textStart"
+        android:layout_marginTop="2dp"
+        android:background="#FFFF"
+        android:layout_marginLeft="5dp"
+        android:onClick="songsclick"
+        android:layout_toRightOf="@+id/songicon"
+        android:id="@+id/allsongbtn"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/abouticon"
+        android:src="@drawable/abouticon"
+        android:layout_below="@+id/songicon"/>
+    <Button
+        android:layout_width="1000dp"
+        android:onClick="aboutclick"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:background="#FFF"
+        android:textAlignment="textStart"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/allsongbtn"
+        android:layout_toRightOf="@+id/abouticon"
+        android:id="@+id/aboutbtn"/>
+</RelativeLayout>
